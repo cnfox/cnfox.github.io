@@ -103,22 +103,20 @@
 
 
 
-  <meta name="description" content="写在开始&amp;#8195;从今天开始接触Java这门语言，讲真心里还是蛮激动的，本身自己对于编程挺感兴趣的，以后也有从事计算机这门行业的打算。之前对java的了解仅是了解，可以是说零基础。准备每天晚上以博客的形式，整理下一天学到的知识点，这一期的博客适用于没有任何java基础或者基础比较薄弱同学们。能力有限，写到的东西可能比较零碎但是好在通俗易懂，希望自己可以一直坚持写下去。&amp;#8195;共勉！">
-<meta name="keywords" content="Java,Hello">
+  <meta name="description" content="写在开头&amp;#8195;善变的我又来了。&amp;#8195;每天看的内容实在是太多了，都写进去真的是“老太婆的裹脚布又臭又长”，不如把一两个重点的内容写好才是真的。&amp;#8195;嗯就这样，每天写一个知识点，写的多一点、细一点。&amp;#8195;搜索功能已经完善好了，可以直接从左侧搜索~ &amp;#8195;这一篇写java嵌套循环。">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello Java">
-<meta property="og:url" content="https:cnfox.github.io/2019/05/27/hello-java/index.html">
+<meta property="og:title" content="Java 嵌套循环">
+<meta property="og:url" content="https:cnfox.github.io/2019/05/31/Java-嵌套循环/index.html">
 <meta property="og:site_name" content="cnfox Blog">
-<meta property="og:description" content="写在开始&amp;#8195;从今天开始接触Java这门语言，讲真心里还是蛮激动的，本身自己对于编程挺感兴趣的，以后也有从事计算机这门行业的打算。之前对java的了解仅是了解，可以是说零基础。准备每天晚上以博客的形式，整理下一天学到的知识点，这一期的博客适用于没有任何java基础或者基础比较薄弱同学们。能力有限，写到的东西可能比较零碎但是好在通俗易懂，希望自己可以一直坚持写下去。&amp;#8195;共勉！">
+<meta property="og:description" content="写在开头&amp;#8195;善变的我又来了。&amp;#8195;每天看的内容实在是太多了，都写进去真的是“老太婆的裹脚布又臭又长”，不如把一两个重点的内容写好才是真的。&amp;#8195;嗯就这样，每天写一个知识点，写的多一点、细一点。&amp;#8195;搜索功能已经完善好了，可以直接从左侧搜索~ &amp;#8195;这一篇写java嵌套循环。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://prvznqstr.bkt.clouddn.com/ing/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190527223845.jpg">
-<meta property="og:image" content="http://prvznqstr.bkt.clouddn.com/ing/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190527223852.png">
-<meta property="og:image" content="http://prvznqstr.bkt.clouddn.com/ing/041339524368671.jpg">
-<meta property="og:updated_time" content="2019-05-27T15:04:41.412Z">
+<meta property="og:image" content="http://prvznqstr.bkt.clouddn.com/ing/20190601151814.png">
+<meta property="og:updated_time" content="2019-06-05T14:34:05.423Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello Java">
-<meta name="twitter:description" content="写在开始&amp;#8195;从今天开始接触Java这门语言，讲真心里还是蛮激动的，本身自己对于编程挺感兴趣的，以后也有从事计算机这门行业的打算。之前对java的了解仅是了解，可以是说零基础。准备每天晚上以博客的形式，整理下一天学到的知识点，这一期的博客适用于没有任何java基础或者基础比较薄弱同学们。能力有限，写到的东西可能比较零碎但是好在通俗易懂，希望自己可以一直坚持写下去。&amp;#8195;共勉！">
-<meta name="twitter:image" content="http://prvznqstr.bkt.clouddn.com/ing/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190527223845.jpg">
+<meta name="twitter:title" content="Java 嵌套循环">
+<meta name="twitter:description" content="写在开头&amp;#8195;善变的我又来了。&amp;#8195;每天看的内容实在是太多了，都写进去真的是“老太婆的裹脚布又臭又长”，不如把一两个重点的内容写好才是真的。&amp;#8195;嗯就这样，每天写一个知识点，写的多一点、细一点。&amp;#8195;搜索功能已经完善好了，可以直接从左侧搜索~ &amp;#8195;这一篇写java嵌套循环。">
+<meta name="twitter:image" content="http://prvznqstr.bkt.clouddn.com/ing/20190601151814.png">
 
 
 
@@ -126,7 +124,7 @@
 
   
   
-  <link rel="canonical" href="https:cnfox.github.io/2019/05/27/hello-java/">
+  <link rel="canonical" href="https:cnfox.github.io/2019/05/31/Java-嵌套循环/">
 
 
 
@@ -136,7 +134,7 @@
   };
 </script>
 
-  <title>Hello Java | cnfox Blog</title>
+  <title>Java 嵌套循环 | cnfox Blog</title>
   
 
 
@@ -383,7 +381,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https:cnfox.github.io/2019/05/27/hello-java/">
+    <link itemprop="mainEntityOfPage" href="https:cnfox.github.io/2019/05/31/Java-嵌套循环/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cnfox">
@@ -400,7 +398,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello Java
+          <h1 class="post-title" itemprop="name headline">Java 嵌套循环
 
               
             
@@ -426,12 +424,24 @@
                 
               
 
-              <time title="创建时间：2019-05-27 22:18:52 / 修改时间：23:04:41" itemprop="dateCreated datePublished" datetime="2019-05-27T22:18:52+08:00">2019-05-27</time>
+              <time title="创建时间：2019-05-31 23:16:16" itemprop="dateCreated datePublished" datetime="2019-05-31T23:16:16+08:00">2019-05-31</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-05 22:34:05" itemprop="dateModified" datetime="2019-06-05T22:34:05+08:00">2019-06-05</time>
               
             
           </span>
@@ -449,8 +459,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/05/27/hello-java/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/27/hello-java/" itemprop="commentCount"></span>
+                <a href="/2019/05/31/Java-嵌套循环/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/31/Java-嵌套循环/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -485,62 +495,53 @@
       
 
       
-        <h2 id="写在开始"><a href="#写在开始" class="headerlink" title="写在开始"></a>写在开始</h2><p>&#8195;从今天开始接触Java这门语言，讲真心里还是蛮激动的，本身自己对于编程挺感兴趣的，以后也有从事计算机这门行业的打算。之前对java的了解仅是了解，可以是说零基础。准备每天晚上以博客的形式，整理下一天学到的知识点，这一期的博客适用于没有任何java基础或者基础比较薄弱同学们。能力有限，写到的东西可能比较零碎但是好在通俗易懂，希望自己可以一直坚持写下去。<br>&#8195;共勉！</p>
+        <h2 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h2><p>&#8195;善变的我又来了。<br>&#8195;每天看的内容实在是太多了，都写进去真的是“老太婆的裹脚布又臭又长”，不如把一两个重点的内容写好才是真的。<br>&#8195;嗯就这样，每天写一个知识点，写的多一点、细一点。<br>&#8195;搜索功能已经完善好了，可以直接从左侧搜索~
+&#8195;这一篇写java嵌套循环。</p>
 <a id="more"></a>
-<h2 id="关于java语言"><a href="#关于java语言" class="headerlink" title="关于java语言"></a>关于java语言</h2><p>&#8195;Java是一门面向对象编程语言，java语言开始于是1995年的sun公司，后来被甲骨文（Oracle）公司收购，Java的版权也就归属了 Oracle。<br>&#8195;Java 的官方网址是：<a href="https://www.java.com/" target="_blank" rel="noopener">https://www.java.com/</a></p>
-<p>&#8195;在世界编程语言排行榜中，近年来java一直稳居第一名的，虽然近年来收到了Python等新型语言的威胁，偶尔跌下王座。下图是2019年6月份公布的TIOBE编程语言排行榜：</p>
-<p><img src="http://prvznqstr.bkt.clouddn.com/ing/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190527223845.jpg" alt></p>
-<p>&#8195;Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。</p>
-<p>&#8195;Java具有简单性、面向对象、分布式、健壮性、安全性、平台独立与可移植性、多线程、动态性等特点 。Java可以编写桌面应用程序、Web应用程序、分布式系统和嵌入式系统应用程序等</p>
-<h2 id="java安装"><a href="#java安装" class="headerlink" title="java安装"></a>java安装</h2><h3 id="java版本选择"><a href="#java版本选择" class="headerlink" title="java版本选择"></a>java版本选择</h3><p>&#8195;最近一次java版本更新是2019年3月份的java12版本。现在使用较多的仍是java 7 和java8 版本。</p>
-<h3 id="java-EE-、java-SE、java-ME之间的选择"><a href="#java-EE-、java-SE、java-ME之间的选择" class="headerlink" title="java EE 、java SE、java ME之间的选择"></a>java EE 、java SE、java ME之间的选择</h3><ul>
-<li>SE(J2SE)：标准版，适合个人学习和开发java。</li>
-<li>EE(J2EE)：企业版，主要用于企业平台开发。</li>
-<li>ME(J2ME)：微型版，主要用于移动设备、嵌入式设备上的java应用程序。</li>
-</ul>
-<h3 id="JDK、JRE、JVM之间的关系"><a href="#JDK、JRE、JVM之间的关系" class="headerlink" title="JDK、JRE、JVM之间的关系"></a>JDK、JRE、JVM之间的关系</h3><ul>
-<li>JDK是Java开发工具包，是整个JAVA的核心。JDK包含java运行环境JRE、一堆Java工具（javac/java/jdb等）和Java基础的类库（即Java API 包括rt.jar），在JDK的安装目录下有一个名为jre的目录。</li>
-<li>JRE是运行基于Java语言编写的程序所不可缺少的运行环境。也是通过它，Java的开发者才得以将自己开发的程序发布到用户手中，让用户使用。JRE中包含了JVM和其他运行Java程序的必要组件。</li>
-<li>JVM : 虚拟机,存在于JRE中。为不同系统,提供相同的Java文件的运行环境。JVM是整个java实现跨平台的最核心的部分，所有的.java文件会首先被编译为.class的类文件，这种类文件可以在虚拟机上执行。也就是说class并不直接与机器的操作系统相对应，而是经过虚拟机（相当于中间层）间接与操作系统交互，由虚拟机将程序解释给本地系统执行。<br>&#8195;简单的说：</li>
-</ul>
-<blockquote>
-<p>JDK : 开发+运行环境</p>
-<blockquote>
-<p>JRE+ 开发工具包(java工具（javac、java）+java基础的类库（java API）)<br>JRE : 程序运行环境<br>JVM+ 运行时需要的核心类库</p>
-</blockquote>
-</blockquote>
-<p>&#8195;画个图可能更好理解点：</p>
-<p><img src="http://prvznqstr.bkt.clouddn.com/ing/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190527223852.png" alt></p>
-<h2 id="java环境变量配置"><a href="#java环境变量配置" class="headerlink" title="java环境变量配置"></a>java环境变量配置</h2><h3 id="java下载安装"><a href="#java下载安装" class="headerlink" title="java下载安装"></a>java下载安装</h3><ol>
-<li><a href="http://www.oracle.com/" target="_blank" rel="noopener">java下载网站</a></li>
-<li>下载好安装包后，双击打开文件下一步就好，安装路径可以修改，但不要放在中文目录下，在安装java jdk的最后，会跳出jre安装的界面，这边是可以安装也可以不安装的，要是想安装的话，安装的路径一定不要放在和jdk相同的目录。</li>
-</ol>
-<h3 id="java环境变量配置-1"><a href="#java环境变量配置-1" class="headerlink" title="java环境变量配置"></a>java环境变量配置</h3><p>&#8195;对于Java程序开发而言，主要会使用JDK的两个命令：javac.exe、java.exe。但是这些命令由于不属于windows自己的命令，所以要想使用，就需要进行路径配置。如果不配置环境变量，你编写的java程序就必须在javac和java程序所在的bin目录下运行，很不方便。配置环境变量后，Java程序在任何位置，都可以直接使用Javac和Java命令进行编译运行。<br><code>注：该环境变量配置是在win7环境下，win10环境大同小异。</code><br><code>此处暂且认为JDK安装路径为：&quot;C:\Java\jdk1.8.0_05&quot;</code></p>
+
+<h2 id="嵌套循环"><a href="#嵌套循环" class="headerlink" title="嵌套循环"></a>嵌套循环</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p><code>每次循环内部的执行逻辑，恰巧又有另外一个循环</code></p>
+<p><img src="http://prvznqstr.bkt.clouddn.com/ing/20190601151814.png" alt></p>
+<p>嵌套for循环的语法格式:<br>for(int i = 1 ; i &lt;= 3 ;i ++){<br>            for(int j = 1; j &lt;= 5; j++){<br>                System.out.println(“教练第”+i+”次指令,队员跑第”+j+”圈”);<br>            }<br>        }</p>
+<p>详细的逻辑思想我会在练习2 中文字体现下/</p>
+<h4 id="练习1"><a href="#练习1" class="headerlink" title="练习1"></a>练习1</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*打印</span></span><br><span class="line"><span class="comment">    ****</span></span><br><span class="line"><span class="comment">    ****</span></span><br><span class="line"><span class="comment">    ****</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lianxi5</span></span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">0</span>;x&lt;<span class="number">3</span>;x++)</span><br><span class="line">		&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> y=<span class="number">0</span>;y&lt;<span class="number">4</span>;y++)	</span><br><span class="line">			&#123;	</span><br><span class="line">System.out.print(<span class="string">"*"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">		System.out.println(<span class="string">" "</span>);&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="练习2"><a href="#练习2" class="headerlink" title="练习2"></a>练习2</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	打印:</span></span><br><span class="line"><span class="comment">		*****</span></span><br><span class="line"><span class="comment">		****</span></span><br><span class="line"><span class="comment">		***</span></span><br><span class="line"><span class="comment">		**</span></span><br><span class="line"><span class="comment">		*</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*什么时候使用嵌套for循环</span></span><br><span class="line"><span class="comment">1) 如果有逻辑重复执行,想到循环</span></span><br><span class="line"><span class="comment">2) 每次循环,循环体,如果还是一个重复的动作,那么循环体内容仍然还是一个循环</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">规律: 一般来说</span></span><br><span class="line"><span class="comment">外层循环用来表示循环执行的次数</span></span><br><span class="line"><span class="comment">内层循环用来表示每次循环内部需要执行的逻辑次数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">XingXingPrint</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= <span class="number">5</span> ; i++)&#123;<span class="comment">// 外层循环表示循环次数,一共打印5行星星,因此外层循环5次</span></span><br><span class="line">       <span class="comment">/*</span></span><br><span class="line"><span class="comment">每次打印星星时,星星变化规律从5个依次减少,最后变成1个</span></span><br><span class="line"><span class="comment">怎么由5变到1,让j=i</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j = i ; j &lt;=<span class="number">5</span>; j++)&#123;</span><br><span class="line">			      System.out.print(<span class="string">"*"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="练习3"><a href="#练习3" class="headerlink" title="练习3"></a>练习3</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*打印</span></span><br><span class="line"><span class="comment">    ****</span></span><br><span class="line"><span class="comment">    ***</span></span><br><span class="line"><span class="comment">    **</span></span><br><span class="line"><span class="comment">    *</span></span><br><span class="line"><span class="comment">    *</span></span><br><span class="line"><span class="comment">    **</span></span><br><span class="line"><span class="comment">    ***</span></span><br><span class="line"><span class="comment">    ****</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lianxi5</span></span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">0</span>;x&lt;=<span class="number">4</span>;x++)</span><br><span class="line">		&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> y=x;y&lt;=<span class="number">4</span>;y++)	</span><br><span class="line">		&#123;	</span><br><span class="line">           System.out.print(<span class="string">"*"</span>);</span><br><span class="line">			&#125;	</span><br><span class="line">		System.out.println(<span class="string">" "</span>);&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> z=<span class="number">0</span>;z&lt;=<span class="number">4</span>;z++)</span><br><span class="line">		&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;=z;k++)	</span><br><span class="line">			&#123;	</span><br><span class="line">              System.out.print(<span class="string">"*"</span>);</span><br><span class="line">			&#125;	</span><br><span class="line">		      System.out.println();&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="练习4-99乘法"><a href="#练习4-99乘法" class="headerlink" title="练习4-99乘法"></a>练习4-99乘法</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1*1=1</span></span><br><span class="line"><span class="comment">1*2=2 2*2=4</span></span><br><span class="line"><span class="comment">1*3=3 2*3=6 3*3=9</span></span><br><span class="line"><span class="comment">1*4=4 2*4=8 3*4=12 4*4=16</span></span><br><span class="line"><span class="comment">......</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lianxi99</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">1</span>;x&lt;=<span class="number">9</span>;x++)</span><br><span class="line">		&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> y=<span class="number">1</span>;y&lt;=x;y++)	</span><br><span class="line">			&#123;</span><br><span class="line">			    <span class="keyword">int</span> z= x*y;</span><br><span class="line">				System.out.print(x+<span class="string">"*"</span>+y+<span class="string">"="</span>+z);</span><br><span class="line">                System.out.print(<span class="string">" "</span>);</span><br><span class="line">			&#125;</span><br><span class="line">         System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="练习5"><a href="#练习5" class="headerlink" title="练习5"></a>练习5</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">----*</span></span><br><span class="line"><span class="comment">---* *</span></span><br><span class="line"><span class="comment">--* * *</span></span><br><span class="line"><span class="comment">-* * * *</span></span><br><span class="line"><span class="comment">* * * * *</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lianxi6</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> x =<span class="number">0</span> ; x&lt;<span class="number">5</span>; x++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> y=x+<span class="number">1</span> ;y&lt;<span class="number">5</span> ;y++ )</span><br><span class="line">	&#123;</span><br><span class="line">		System.out.print(<span class="string">"-"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> z=<span class="number">0</span> ;z&lt;=x ;z++ )</span><br><span class="line">	&#123;</span><br><span class="line">		System.out.print(<span class="string">"* "</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">		System.out.println();</span><br><span class="line">	&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="死循环"><a href="#死循环" class="headerlink" title="死循环"></a>死循环</h3><p>死循环: 概念,循环永远不结束<br>例如: </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>( ; ;)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt;=<span class="number">0</span> ; i--)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结: </p>
 <ol>
-<li><p>单击“计算机-属性-高级系统设置”，单击“环境变量”。在“系统变量”栏下单击“新建”，创建新的系统环境变量。</p>
-</li>
-<li><p>配置环境变量</p>
-</li>
+<li>for循环的死循环发生的原因,判断条件永远为true</li>
+<li>while的死循环,原因,表达式永远为true</li>
+<li>死循环代码是可以执行的,并且一直在执行,没有结束的时候</li>
 </ol>
-<ul>
-<li>新建-&gt;变量名<code>JAVA_HOME</code>，变量值<code>C:\Java\jdk1.8.0_05</code>（即JDK的安装路径） </li>
-<li>编辑-&gt;变量名<code>Path</code>，在原变量值的最后面加上<code>;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin</code></li>
-<li>新建-&gt;变量名<code>CLASSPATH</code><br>变量值<code>;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</code></li>
+<p><strong>注意: 写代码的时候,一定要注意,千万不要造成死循环</strong></p>
+<h3 id="循环跳出语句"><a href="#循环跳出语句" class="headerlink" title="循环跳出语句"></a>循环跳出语句</h3><ul>
+<li><p>continue : 关键字,表示停止本次循环,继续执行下一次循环,continue之后的循环体代码不执行</p>
+</li>
+<li><p>break : 关键字,表示直接将本次循环全部终止(跳出本次循环),break之后的循环体代码不执行,当前循环直接结束.注意: break每次只能结束一个循环</p>
+</li>
+<li><p>return : 表示返回,将方法的时候再具体讲解(将整个方法结束)(后面讲)</p>
+</li>
 </ul>
-<ol start="3">
-<li>确认环境变量配置是否正确</li>
-</ol>
-<p>&#8195;在控制台cmd分别输入java，javac，java -version 命令，出现如下所示的JDK的编译器信息，包括修改命令的语法和参数选项等信息，即为java环境变量配置正确！</p>
-<h2 id="我们的第一个Java程序"><a href="#我们的第一个Java程序" class="headerlink" title="我们的第一个Java程序"></a>我们的第一个Java程序</h2><p>&#8195;以下我们通过一个简单的实例来展示 Java 编程，创建文件 HelloWorld.java(文件名需与类名一致), 代码如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>代码中体现下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//continue 结束本次循环</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">ContinueDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">// 要求: 1-10之间的所有偶数,打印出来(continue)</span></span><br><span class="line"><span class="comment">// continue: 表示结束本次循环,接着执行下一次循环,continue之后的循环体代码不执行</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= <span class="number">10</span> ;i++)&#123;</span><br><span class="line">			<span class="comment">//判断这个是是不是偶数</span></span><br><span class="line">			<span class="keyword">if</span>( i % <span class="number">2</span> == <span class="number">1</span>)&#123;</span><br><span class="line">			    <span class="keyword">continue</span>;<span class="comment">// 结束本次循环,接着执行i++,进行下一次循环</span></span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println(i);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>&#8195;我们首先使用最简单的记事本软件，将以上代码输入，暂且不需要理解里面的代码是什么意思。需要注意的一点是，<code>如果想手动输入代码，需要在全英文状态下输入。</code>然后另存为文档后缀为.java。<br>&#8195;在命令行模式中，输入命令：javac HelloWorld.java，对源代码进行编译，生成class字节码文件HelloWorld.class；</p>
-<p>&#8195;编译完成后，如果没有报错信息，接下来输入命令：java HelloWorld，对class字节码文件进行解释运行,执行时不需要添加.class扩展名。命令框输出Hello World 输出结果见下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">javac HelloWorld.java</span><br><span class="line">java HelloWorld</span><br><span class="line">Hello World</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// break 结束整个循环</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">BreakDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">// 要求: 打印1-10之间的整数,当遇到5的时候,循环结束(break)</span></span><br><span class="line">		<span class="comment">// break: 表示结束循环,break之后的循环体代码不执行</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= <span class="number">10</span>; i++)&#123;</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">if</span>(i == <span class="number">5</span>)&#123;</span><br><span class="line">			   <span class="keyword">break</span>;<span class="comment">// 结束整个循环</span></span><br><span class="line">			&#125;</span><br><span class="line">		   System.out.println(i);<span class="comment">// 1-4,不打印5,因为5还没打印呢,循环就结束了</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>编译过程见下图：</p>
-<p><img src="http://prvznqstr.bkt.clouddn.com/ing/041339524368671.jpg" alt></p>
-<h2 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h2><p>&#8195;今天就到这里了，明天见，加油！</p>
+<p>对学习编程者的忠告：</p>
+<center>眼过千遍不如手过一遍！</center>
+<center>书看千行不如手敲一行！</center>
+<center>手敲千行不如单步一行！</center>
 
       
     </div>
@@ -610,8 +611,6 @@
           
             <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"> Java</i></a>
           
-            <a href="/tags/Hello/" rel="tag"><i class="fa fa-tag"> Hello</i></a>
-          
         </div>
       
 
@@ -623,8 +622,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/22/Makedownlanguage2/" rel="next" title="Makedown 进阶语法">
-                <i class="fa fa-chevron-left"></i> Makedown 进阶语法
+              <a href="/2019/05/30/Java-Day03/" rel="next" title="Java 第四天">
+                <i class="fa fa-chevron-left"></i> Java 第四天
               </a>
             
           </div>
@@ -633,8 +632,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/28/23-years-old/" rel="prev" title="写在23岁的第一天">
-                写在23岁的第一天 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/31/Java-loop nest/" rel="prev" title="Java 嵌套循环">
+                Java 嵌套循环 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -843,7 +842,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开始"><span class="nav-number">1.</span> <span class="nav-text">写在开始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于java语言"><span class="nav-number">2.</span> <span class="nav-text">关于java语言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java安装"><span class="nav-number">3.</span> <span class="nav-text">java安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#java版本选择"><span class="nav-number">3.1.</span> <span class="nav-text">java版本选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#java-EE-、java-SE、java-ME之间的选择"><span class="nav-number">3.2.</span> <span class="nav-text">java EE 、java SE、java ME之间的选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JDK、JRE、JVM之间的关系"><span class="nav-number">3.3.</span> <span class="nav-text">JDK、JRE、JVM之间的关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java环境变量配置"><span class="nav-number">4.</span> <span class="nav-text">java环境变量配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#java下载安装"><span class="nav-number">4.1.</span> <span class="nav-text">java下载安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#java环境变量配置-1"><span class="nav-number">4.2.</span> <span class="nav-text">java环境变量配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#我们的第一个Java程序"><span class="nav-number">5.</span> <span class="nav-text">我们的第一个Java程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晚安"><span class="nav-number">6.</span> <span class="nav-text">晚安</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌套循环"><span class="nav-number">2.</span> <span class="nav-text">嵌套循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念"><span class="nav-number">2.1.</span> <span class="nav-text">概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#练习1"><span class="nav-number">2.1.1.</span> <span class="nav-text">练习1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习2"><span class="nav-number">2.1.2.</span> <span class="nav-text">练习2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习3"><span class="nav-number">2.1.3.</span> <span class="nav-text">练习3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习4-99乘法"><span class="nav-number">2.1.4.</span> <span class="nav-text">练习4-99乘法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习5"><span class="nav-number">2.1.5.</span> <span class="nav-text">练习5</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#死循环"><span class="nav-number">2.2.</span> <span class="nav-text">死循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环跳出语句"><span class="nav-number">2.3.</span> <span class="nav-text">循环跳出语句</span></a></li></ol></li></ol></div>
             
 
           </div>
