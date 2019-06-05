@@ -103,20 +103,18 @@
 
 
 
-  <meta name="description" content="写在开头&amp;#8195;善变的我又来了。&amp;#8195;每天看的内容实在是太多了，都写进去真的是“老太婆的裹脚布又臭又长”，不如把一两个重点的内容写好才是真的。&amp;#8195;嗯就这样，每天写一个知识点，写的多一点、细一点。&amp;#8195;搜索功能已经完善好了，可以直接从左侧搜索~ &amp;#8195;这一篇写java嵌套循环。">
+  <meta name="description" content="写在开头&amp;#8195;构造函数，是一种特殊的方法。&amp;#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。&amp;#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。&amp;#8195;今天我们说一下Java:构造函数.">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java 嵌套循环">
-<meta property="og:url" content="https:cnfox.github.io/2019/05/31/Java-loop nest/index.html">
+<meta property="og:title" content="Java 构造函数">
+<meta property="og:url" content="https:cnfox.github.io/2019/06/05/Java-constructor/index.html">
 <meta property="og:site_name" content="cnfox Blog">
-<meta property="og:description" content="写在开头&amp;#8195;善变的我又来了。&amp;#8195;每天看的内容实在是太多了，都写进去真的是“老太婆的裹脚布又臭又长”，不如把一两个重点的内容写好才是真的。&amp;#8195;嗯就这样，每天写一个知识点，写的多一点、细一点。&amp;#8195;搜索功能已经完善好了，可以直接从左侧搜索~ &amp;#8195;这一篇写java嵌套循环。">
+<meta property="og:description" content="写在开头&amp;#8195;构造函数，是一种特殊的方法。&amp;#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。&amp;#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。&amp;#8195;今天我们说一下Java:构造函数.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://prvznqstr.bkt.clouddn.com/ing/20190601151814.png">
-<meta property="og:updated_time" content="2019-06-01T08:08:26.211Z">
+<meta property="og:updated_time" content="2019-06-05T15:23:06.812Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java 嵌套循环">
-<meta name="twitter:description" content="写在开头&amp;#8195;善变的我又来了。&amp;#8195;每天看的内容实在是太多了，都写进去真的是“老太婆的裹脚布又臭又长”，不如把一两个重点的内容写好才是真的。&amp;#8195;嗯就这样，每天写一个知识点，写的多一点、细一点。&amp;#8195;搜索功能已经完善好了，可以直接从左侧搜索~ &amp;#8195;这一篇写java嵌套循环。">
-<meta name="twitter:image" content="http://prvznqstr.bkt.clouddn.com/ing/20190601151814.png">
+<meta name="twitter:title" content="Java 构造函数">
+<meta name="twitter:description" content="写在开头&amp;#8195;构造函数，是一种特殊的方法。&amp;#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。&amp;#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。&amp;#8195;今天我们说一下Java:构造函数.">
 
 
 
@@ -124,7 +122,7 @@
 
   
   
-  <link rel="canonical" href="https:cnfox.github.io/2019/05/31/Java-loop nest/">
+  <link rel="canonical" href="https:cnfox.github.io/2019/06/05/Java-constructor/">
 
 
 
@@ -134,7 +132,7 @@
   };
 </script>
 
-  <title>Java 嵌套循环 | cnfox Blog</title>
+  <title>Java 构造函数 | cnfox Blog</title>
   
 
 
@@ -381,7 +379,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https:cnfox.github.io/2019/05/31/Java-loop nest/">
+    <link itemprop="mainEntityOfPage" href="https:cnfox.github.io/2019/06/05/Java-constructor/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cnfox">
@@ -398,7 +396,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Java 嵌套循环
+          <h1 class="post-title" itemprop="name headline">Java 构造函数
 
               
             
@@ -424,24 +422,12 @@
                 
               
 
-              <time title="创建时间：2019-05-31 23:16:16" itemprop="dateCreated datePublished" datetime="2019-05-31T23:16:16+08:00">2019-05-31</time>
+              <time title="创建时间：2019-06-05 23:19:31 / 修改时间：23:23:06" itemprop="dateCreated datePublished" datetime="2019-06-05T23:19:31+08:00">2019-06-05</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-06-01 16:08:26" itemprop="dateModified" datetime="2019-06-01T16:08:26+08:00">2019-06-01</time>
               
             
           </span>
@@ -459,8 +445,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/05/31/Java-loop nest/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/31/Java-loop nest/" itemprop="commentCount"></span>
+                <a href="/2019/06/05/Java-constructor/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/05/Java-constructor/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -495,54 +481,8 @@
       
 
       
-        <h2 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h2><p>&#8195;善变的我又来了。<br>&#8195;每天看的内容实在是太多了，都写进去真的是“老太婆的裹脚布又臭又长”，不如把一两个重点的内容写好才是真的。<br>&#8195;嗯就这样，每天写一个知识点，写的多一点、细一点。<br>&#8195;搜索功能已经完善好了，可以直接从左侧搜索~
-&#8195;这一篇写java嵌套循环。</p>
+        <h2 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h2><p>&#8195;构造函数，是一种特殊的方法。<br>&#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。<br>&#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。<br>&#8195;今天我们说一下Java:构造函数.</p>
 <a id="more"></a>
-
-<h2 id="嵌套循环"><a href="#嵌套循环" class="headerlink" title="嵌套循环"></a>嵌套循环</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p><code>每次循环内部的执行逻辑，恰巧又有另外一个循环</code></p>
-<p><img src="http://prvznqstr.bkt.clouddn.com/ing/20190601151814.png" alt></p>
-<p>嵌套for循环的语法格式:<br>for(int i = 1 ; i &lt;= 3 ;i ++){<br>            for(int j = 1; j &lt;= 5; j++){<br>                System.out.println(“教练第”+i+”次指令,队员跑第”+j+”圈”);<br>            }<br>        }</p>
-<p>详细的逻辑思想我会在练习2 中文字体现下/</p>
-<h4 id="练习1"><a href="#练习1" class="headerlink" title="练习1"></a>练习1</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*打印</span></span><br><span class="line"><span class="comment">    ****</span></span><br><span class="line"><span class="comment">    ****</span></span><br><span class="line"><span class="comment">    ****</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lianxi5</span></span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">0</span>;x&lt;<span class="number">3</span>;x++)</span><br><span class="line">		&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> y=<span class="number">0</span>;y&lt;<span class="number">4</span>;y++)	</span><br><span class="line">			&#123;	</span><br><span class="line">System.out.print(<span class="string">"*"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">		System.out.println(<span class="string">" "</span>);&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="练习2"><a href="#练习2" class="headerlink" title="练习2"></a>练习2</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	打印:</span></span><br><span class="line"><span class="comment">		*****</span></span><br><span class="line"><span class="comment">		****</span></span><br><span class="line"><span class="comment">		***</span></span><br><span class="line"><span class="comment">		**</span></span><br><span class="line"><span class="comment">		*</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*什么时候使用嵌套for循环</span></span><br><span class="line"><span class="comment">1) 如果有逻辑重复执行,想到循环</span></span><br><span class="line"><span class="comment">2) 每次循环,循环体,如果还是一个重复的动作,那么循环体内容仍然还是一个循环</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">规律: 一般来说</span></span><br><span class="line"><span class="comment">外层循环用来表示循环执行的次数</span></span><br><span class="line"><span class="comment">内层循环用来表示每次循环内部需要执行的逻辑次数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">XingXingPrint</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= <span class="number">5</span> ; i++)&#123;<span class="comment">// 外层循环表示循环次数,一共打印5行星星,因此外层循环5次</span></span><br><span class="line">       <span class="comment">/*</span></span><br><span class="line"><span class="comment">每次打印星星时,星星变化规律从5个依次减少,最后变成1个</span></span><br><span class="line"><span class="comment">怎么由5变到1,让j=i</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j = i ; j &lt;=<span class="number">5</span>; j++)&#123;</span><br><span class="line">			      System.out.print(<span class="string">"*"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="练习3"><a href="#练习3" class="headerlink" title="练习3"></a>练习3</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*打印</span></span><br><span class="line"><span class="comment">    ****</span></span><br><span class="line"><span class="comment">    ***</span></span><br><span class="line"><span class="comment">    **</span></span><br><span class="line"><span class="comment">    *</span></span><br><span class="line"><span class="comment">    *</span></span><br><span class="line"><span class="comment">    **</span></span><br><span class="line"><span class="comment">    ***</span></span><br><span class="line"><span class="comment">    ****</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lianxi5</span></span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">0</span>;x&lt;=<span class="number">4</span>;x++)</span><br><span class="line">		&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> y=x;y&lt;=<span class="number">4</span>;y++)	</span><br><span class="line">		&#123;	</span><br><span class="line">           System.out.print(<span class="string">"*"</span>);</span><br><span class="line">			&#125;	</span><br><span class="line">		System.out.println(<span class="string">" "</span>);&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> z=<span class="number">0</span>;z&lt;=<span class="number">4</span>;z++)</span><br><span class="line">		&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;=z;k++)	</span><br><span class="line">			&#123;	</span><br><span class="line">              System.out.print(<span class="string">"*"</span>);</span><br><span class="line">			&#125;	</span><br><span class="line">		      System.out.println();&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="练习4-99乘法"><a href="#练习4-99乘法" class="headerlink" title="练习4-99乘法"></a>练习4-99乘法</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1*1=1</span></span><br><span class="line"><span class="comment">1*2=2 2*2=4</span></span><br><span class="line"><span class="comment">1*3=3 2*3=6 3*3=9</span></span><br><span class="line"><span class="comment">1*4=4 2*4=8 3*4=12 4*4=16</span></span><br><span class="line"><span class="comment">......</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lianxi99</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">1</span>;x&lt;=<span class="number">9</span>;x++)</span><br><span class="line">		&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> y=<span class="number">1</span>;y&lt;=x;y++)	</span><br><span class="line">			&#123;</span><br><span class="line">			    <span class="keyword">int</span> z= x*y;</span><br><span class="line">				System.out.print(x+<span class="string">"*"</span>+y+<span class="string">"="</span>+z);</span><br><span class="line">                System.out.print(<span class="string">" "</span>);</span><br><span class="line">			&#125;</span><br><span class="line">         System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="练习5"><a href="#练习5" class="headerlink" title="练习5"></a>练习5</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">----*</span></span><br><span class="line"><span class="comment">---* *</span></span><br><span class="line"><span class="comment">--* * *</span></span><br><span class="line"><span class="comment">-* * * *</span></span><br><span class="line"><span class="comment">* * * * *</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lianxi6</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> x =<span class="number">0</span> ; x&lt;<span class="number">5</span>; x++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> y=x+<span class="number">1</span> ;y&lt;<span class="number">5</span> ;y++ )</span><br><span class="line">	&#123;</span><br><span class="line">		System.out.print(<span class="string">"-"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> z=<span class="number">0</span> ;z&lt;=x ;z++ )</span><br><span class="line">	&#123;</span><br><span class="line">		System.out.print(<span class="string">"* "</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">		System.out.println();</span><br><span class="line">	&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="死循环"><a href="#死循环" class="headerlink" title="死循环"></a>死循环</h3><p>死循环: 概念,循环永远不结束<br>例如: </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>( ; ;)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt;=<span class="number">0</span> ; i--)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>总结: </p>
-<ol>
-<li>for循环的死循环发生的原因,判断条件永远为true</li>
-<li>while的死循环,原因,表达式永远为true</li>
-<li>死循环代码是可以执行的,并且一直在执行,没有结束的时候</li>
-</ol>
-<p><strong>注意: 写代码的时候,一定要注意,千万不要造成死循环</strong></p>
-<h3 id="循环跳出语句"><a href="#循环跳出语句" class="headerlink" title="循环跳出语句"></a>循环跳出语句</h3><ul>
-<li><p>continue : 关键字,表示停止本次循环,继续执行下一次循环,continue之后的循环体代码不执行</p>
-</li>
-<li><p>break : 关键字,表示直接将本次循环全部终止(跳出本次循环),break之后的循环体代码不执行,当前循环直接结束.注意: break每次只能结束一个循环</p>
-</li>
-<li><p>return : 表示返回,将方法的时候再具体讲解(将整个方法结束)(后面讲)</p>
-</li>
-</ul>
-<p>代码中体现下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//continue 结束本次循环</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">ContinueDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">// 要求: 1-10之间的所有偶数,打印出来(continue)</span></span><br><span class="line"><span class="comment">// continue: 表示结束本次循环,接着执行下一次循环,continue之后的循环体代码不执行</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= <span class="number">10</span> ;i++)&#123;</span><br><span class="line">			<span class="comment">//判断这个是是不是偶数</span></span><br><span class="line">			<span class="keyword">if</span>( i % <span class="number">2</span> == <span class="number">1</span>)&#123;</span><br><span class="line">			    <span class="keyword">continue</span>;<span class="comment">// 结束本次循环,接着执行i++,进行下一次循环</span></span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println(i);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// break 结束整个循环</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">BreakDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">// 要求: 打印1-10之间的整数,当遇到5的时候,循环结束(break)</span></span><br><span class="line">		<span class="comment">// break: 表示结束循环,break之后的循环体代码不执行</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= <span class="number">10</span>; i++)&#123;</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">if</span>(i == <span class="number">5</span>)&#123;</span><br><span class="line">			   <span class="keyword">break</span>;<span class="comment">// 结束整个循环</span></span><br><span class="line">			&#125;</span><br><span class="line">		   System.out.println(i);<span class="comment">// 1-4,不打印5,因为5还没打印呢,循环就结束了</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>对学习编程者的忠告：</p>
-<center>眼过千遍不如手过一遍！</center>
-<center>书看千行不如手敲一行！</center>
-<center>手敲千行不如单步一行！</center>
-
       
     </div>
 
@@ -622,8 +562,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/30/Java-Day03/" rel="next" title="Java 第四天">
-                <i class="fa fa-chevron-left"></i> Java 第四天
+              <a href="/2019/06/04/java-oo/" rel="next" title="java核心思想-面向对象">
+                <i class="fa fa-chevron-left"></i> java核心思想-面向对象
               </a>
             
           </div>
@@ -631,10 +571,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/31/Java-way/" rel="prev" title="Java 方法">
-                Java 方法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -842,7 +778,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌套循环"><span class="nav-number">2.</span> <span class="nav-text">嵌套循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念"><span class="nav-number">2.1.</span> <span class="nav-text">概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#练习1"><span class="nav-number">2.1.1.</span> <span class="nav-text">练习1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习2"><span class="nav-number">2.1.2.</span> <span class="nav-text">练习2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习3"><span class="nav-number">2.1.3.</span> <span class="nav-text">练习3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习4-99乘法"><span class="nav-number">2.1.4.</span> <span class="nav-text">练习4-99乘法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习5"><span class="nav-number">2.1.5.</span> <span class="nav-text">练习5</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#死循环"><span class="nav-number">2.2.</span> <span class="nav-text">死循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环跳出语句"><span class="nav-number">2.3.</span> <span class="nav-text">循环跳出语句</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li></ol></div>
             
 
           </div>
