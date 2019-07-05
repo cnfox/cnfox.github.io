@@ -111,10 +111,12 @@
 <meta property="og:site_name" content="cnfox Blog">
 <meta property="og:description" content="写在开头&amp;#8195;static作为静态成员变量和成员函数的修饰符，意味着它为该类的所有实例所共享&amp;#8195;也就是说当某个类的实例修改了该静态成员变量，其修改值为该类的其它所有实例所见。&amp;#8195;静态存在与方法区中&amp;#8195;今天我们说一下Java:静态">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-05T02:14:35.312Z">
+<meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190705101811.png">
+<meta property="og:updated_time" content="2019-07-05T02:30:27.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java_static">
 <meta name="twitter:description" content="写在开头&amp;#8195;static作为静态成员变量和成员函数的修饰符，意味着它为该类的所有实例所共享&amp;#8195;也就是说当某个类的实例修改了该静态成员变量，其修改值为该类的其它所有实例所见。&amp;#8195;静态存在与方法区中&amp;#8195;今天我们说一下Java:静态">
+<meta name="twitter:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190705101811.png">
 
 
 
@@ -458,7 +460,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-05 10:14:35" itemprop="dateModified" datetime="2019-07-05T10:14:35+08:00">2019-07-05</time>
+                <time title="修改时间：2019-07-05 10:30:27" itemprop="dateModified" datetime="2019-07-05T10:30:27+08:00">2019-07-05</time>
               
             
           </span>
@@ -514,6 +516,34 @@
       
         <h2 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h2><p>&#8195;static作为静态成员变量和成员函数的修饰符，意味着它为该类的所有实例所共享<br>&#8195;也就是说当某个类的实例修改了该静态成员变量，其修改值为该类的其它所有实例所见。<br>&#8195;静态存在与方法区中<br>&#8195;今天我们说一下Java:静态</p>
 <a id="more"></a>
+
+<h2 id="静态概述"><a href="#静态概述" class="headerlink" title="静态概述"></a>静态概述</h2><ol>
+<li>static :静态的,具有共享性</li>
+<li>静态跟随着类(class)的加载而加载进内存,(类进入到内存的时机: 调用了类中main方法,实例化对象,调用类中静态,继承关系,如果你要使用这个类中的内容,那么类就需要先加载进内存) 类进内存后,JVM就会检索,类中有哪些使用static修饰的成员(成员变量,方法),将static修饰的成员加载进入到内存区域中(数据共享,静态池)</li>
+<li>static静态属于类的,不属于任何对象;但是可以被这个类的所有对象所使用(共享性)</li>
+<li>static静态优先于对象存在</li>
+<li>静态的调用方式:类名.静态</li>
+</ol>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 静态关键字 static</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">StudentStaticDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">int</span> age;</span><br><span class="line">	<span class="comment">// 共享的变量,使用静态修饰的变量,属于类</span></span><br><span class="line">	<span class="keyword">static</span> String schoolName = <span class="string">"清华大学"</span>;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		StudentStaticDemo ss = <span class="keyword">new</span> StudentStaticDemo();</span><br><span class="line">		System.out.println(ss.schoolName);<span class="comment">//清华大学 </span></span><br><span class="line">		ss.schoolName = <span class="string">"北京大学"</span>;<span class="comment">// 赋值</span></span><br><span class="line"></span><br><span class="line">		StudentStaticDemo ss1 = <span class="keyword">new</span> StudentStaticDemo();</span><br><span class="line">		System.out.println(ss1.schoolName);<span class="comment">//北京大学</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">// 静态的调用方式: 最推荐 类名.静态------ 成员变量,静态方法</span></span><br><span class="line">		<span class="comment">// 静态的调用方式2中 1) 最推荐 2) 可以通过对象名.调用 (不推荐)</span></span><br><span class="line">		<span class="comment">// 静态属于类的,可以被所有对象共享使用,</span></span><br><span class="line">		System.out.println(StudentStaticDemo.schoolName);<span class="comment">//北京大学 </span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190705101811.png" alt></p>
+<h2 id="使用时注意事项"><a href="#使用时注意事项" class="headerlink" title="使用时注意事项"></a>使用时注意事项</h2><p>静态中(方法)不能调用非静态(变量,方法)</p>
+<ol>
+<li>静态都使用static修饰</li>
+<li>静态方法中,不能调用非静态的变量</li>
+<li>静态方法中,不能调非静态的方法</li>
+<li>静态中不能使用this关键字</li>
+<li>非静态中可以使用静态</li>
+</ol>
+<p>静态使用静态</p>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 静态调用的注意事项,静态不能调用非静态</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">StaticZhuYiDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">10</span>;<span class="comment">//成员变量,非静态</span></span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">int</span> b = <span class="number">10</span>;<span class="comment">// 成员变量,静态</span></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">// System.out.println(this); 错误代码,static中不能使用this关键字</span></span><br><span class="line">		<span class="comment">//get();  错误代码,静态中不能直接调用非静态的方法,可以通过new对象调用非静态方法</span></span><br><span class="line">		StaticZhuYiDemo  sz = <span class="keyword">new</span> StaticZhuYiDemo();</span><br><span class="line">		sz.get();</span><br><span class="line"></span><br><span class="line">		<span class="comment">//System.out.println(a);// 错误代码,无法从静态的上下文中,调用非静态的变量a</span></span><br><span class="line">		System.out.println(b);<span class="comment">// 静态变量可以在静态方法中使用</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">get</span><span class="params">()</span></span>&#123;<span class="comment">// get方法为非静态方法	  </span></span><br><span class="line">	   System.out.println(<span class="string">"----"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="静态和非静态的区别"><a href="#静态和非静态的区别" class="headerlink" title="静态和非静态的区别"></a>静态和非静态的区别</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">1. 所属不同</span><br><span class="line">  静态变量: 属于类</span><br><span class="line">  非静态变量: 属于对象</span><br><span class="line">2. 内存存储位置不一样</span><br><span class="line">  静态变量: 存在于数据共享区域(静态池)</span><br><span class="line">  非静态变量 : 存在于堆内存中</span><br><span class="line">3. 生命周期不同</span><br><span class="line">  静态: 属于类,随着类进入到内存,静态出生;类不再使用了,类出内存,静态消亡</span><br><span class="line">  非静态变量: 属于对象,随着对象的创建(new)进入内存;当对象在栈内存中,没有任何的引用再指向这个变量时,对象变成垃圾,等着回收,非静态变量分着对象消亡</span><br><span class="line">  静态的生命周期大于非静态的生命周期</span><br><span class="line">4. 调用方式不同</span><br><span class="line">  静态: 1) 类名.静态   2) 创建对象,通过对象名.静态------(不推荐使用)</span><br><span class="line">  非静态: 创建对象,通过对象名.非静态</span><br><span class="line">5. 静态的成员变量,在进入到数据共享区域时,JVM也会给静态成员赋初值</span><br></pre></td></tr></table></figure>
+
+<h2 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h2><p>&#8195;今天就到这里了，明天见，加油！</p>
+
       
     </div>
 
@@ -825,7 +855,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态概述"><span class="nav-number">2.</span> <span class="nav-text">静态概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用时注意事项"><span class="nav-number">3.</span> <span class="nav-text">使用时注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态和非静态的区别"><span class="nav-number">4.</span> <span class="nav-text">静态和非静态的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晚安"><span class="nav-number">5.</span> <span class="nav-text">晚安</span></a></li></ol></div>
             
 
           </div>
