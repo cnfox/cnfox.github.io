@@ -106,15 +106,17 @@
   <meta name="description" content="写在开头&amp;#8195;在面向对象的概念中，所有的对象都是通过类来描绘的，&amp;#8195;但是反过来，并不是所有的类都是用来描绘对象的，如果一个类中没有包含足够的信息来描绘一个具体的对象，这样的类就是抽象类。&amp;#8195;抽象类除了不能实例化对象之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式和普通类一样。&amp;#8195;今天我们说一下Java:抽象类">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java_abstract">
+<meta property="og:title" content="Java abstract">
 <meta property="og:url" content="https:cnfox.github.io/2019/06/09/Java-abs/index.html">
 <meta property="og:site_name" content="cnfox Blog">
 <meta property="og:description" content="写在开头&amp;#8195;在面向对象的概念中，所有的对象都是通过类来描绘的，&amp;#8195;但是反过来，并不是所有的类都是用来描绘对象的，如果一个类中没有包含足够的信息来描绘一个具体的对象，这样的类就是抽象类。&amp;#8195;抽象类除了不能实例化对象之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式和普通类一样。&amp;#8195;今天我们说一下Java:抽象类">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-05T02:30:24.214Z">
+<meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190705155251.png">
+<meta property="og:updated_time" content="2019-07-05T08:03:28.184Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java_abstract">
+<meta name="twitter:title" content="Java abstract">
 <meta name="twitter:description" content="写在开头&amp;#8195;在面向对象的概念中，所有的对象都是通过类来描绘的，&amp;#8195;但是反过来，并不是所有的类都是用来描绘对象的，如果一个类中没有包含足够的信息来描绘一个具体的对象，这样的类就是抽象类。&amp;#8195;抽象类除了不能实例化对象之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式和普通类一样。&amp;#8195;今天我们说一下Java:抽象类">
+<meta name="twitter:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190705155251.png">
 
 
 
@@ -132,7 +134,7 @@
   };
 </script>
 
-  <title>Java_abstract | cnfox Blog</title>
+  <title>Java abstract | cnfox Blog</title>
   
 
 
@@ -253,7 +255,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">25</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">27</span></a>
 
   </li>
         
@@ -434,7 +436,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Java_abstract
+          <h1 class="post-title" itemprop="name headline">Java abstract
 
               
             
@@ -477,7 +479,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-05 10:30:24" itemprop="dateModified" datetime="2019-07-05T10:30:24+08:00">2019-07-05</time>
+                <time title="修改时间：2019-07-05 16:03:28" itemprop="dateModified" datetime="2019-07-05T16:03:28+08:00">2019-07-05</time>
               
             
           </span>
@@ -534,6 +536,62 @@
         <h2 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h2><p>&#8195;在面向对象的概念中，所有的对象都是通过类来描绘的，<br>&#8195;但是反过来，并不是所有的类都是用来描绘对象的，如果一个类中没有包含足够的信息来描绘一个具体的对象，这样的类就是抽象类。<br>&#8195;抽象类除了不能实例化对象之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式和普通类一样。<br>&#8195;今天我们说一下Java:抽象类</p>
 <a id="more"></a>
 
+<h2 id="抽象的概述"><a href="#抽象的概述" class="headerlink" title="抽象的概述"></a>抽象的概述</h2><p><strong>抽象即无法描述的</strong></p>
+<p><img src="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190705155251.png" alt></p>
+<h2 id="抽象方法的定义方法"><a href="#抽象方法的定义方法" class="headerlink" title="抽象方法的定义方法"></a>抽象方法的定义方法</h2><ul>
+<li>抽象方法只有声明,没有方法主体,需要添加abstract修饰符 </li>
+<li>抽象方法存在的意义,就是等子类来重写,所以没有方法主体 ,只有声明</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 抽象方法</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">AnimalAbs</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="comment">// 抽象方法,存在的意义,就等着子类来重写我,抽象方法,因为没有方法体,所以不能运行</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h2><p><strong>抽象类中不一定有抽象方法,但是有抽象方法的一定是抽象类</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 抽象类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span>  <span class="title">AnimalAbs</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="comment">// 抽象方法,存在的意义,就等着子类来重写我,抽象方法,因为没有方法体,所以不能运行</span></span><br><span class="line">	<span class="comment">// 抽象方法,一定要存在于抽象类中</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="抽象的特点"><a href="#抽象的特点" class="headerlink" title="抽象的特点"></a>抽象的特点</h2><ol>
+<li><p>抽象类和抽象方法,都必须使用abstract 关键字</p>
+</li>
+<li><p>抽象方法一定要写在抽象类中,抽象类中不一定含有抽象方法<br>1) 抽象类中,可以没有抽象方法<br>2) 抽象类中,可以有抽象方法,也可以全是抽象方法</p>
+</li>
+<li><p>抽象类,不能实例化对象,不能new<br>为什么抽象类,不能new(Animal是抽象类,里面定义了eat()抽象方法)<br>原因: 如果可以new抽象类,<br>Animal a = new Animal(); a.eat();<br>上述案例中: eat() 方法不能执行,因此a.eat()报错,于是,抽象类一律不能实例化对象</p>
+</li>
+<li><p>抽象类和抽象方法的实现<br>抽象类存在的意义: 就是需要子类来继承<br>抽象方法存在的意义: 就是需要子类重写<br>抽象类中普通方法存在的意义:  普通方法,可以让子类直接继承</p>
+<p>抽象类和抽象方法其实是一种限制,一种编程思路:<br>例如: 但凡是动物,就都需要吃饭,抽象类,可以是一种规则</p>
+</li>
+<li><p>子类继承了抽象类,尽量要求子类将父类中的所有抽象方法全部重写<br>1) 如果子类将抽象类中所有抽象方法全部重写,这个子类,就是普通类,实例化子类对象,<br>通过对象名,调用重写的方法.<br>2) 如果子类,没有将父类中的所有抽象方法全部重写(一个都没重写,重写一部分),子类就是一个抽象类(抽象方法可以继承),这个子类,不能实例化对象</p>
+</li>
+<li><p>子类重写父类抽象方法注意:</p>
+<pre><code>   1. 方法名,参数列表,返回值与父类方法一致,权限大于等于父类 
+2. 去掉abstract关键字
+3. 去掉方法声明后面的;然后给方法加上方法体{}</code></pre></li>
+<li><p>抽象类也可以作为方法的参数和返回值,抽象类也可以使用多态</p>
+</li>
+</ol>
+<p>代码1</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 抽象类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span>  <span class="title">AnimalAbs</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="comment">// 抽象方法,存在的意义,就等着子类来重写我,抽象方法,因为没有方法体,所以不能运行</span></span><br><span class="line">	<span class="comment">// 抽象方法,一定要存在于抽象类中</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象类中,不一定,全是抽象方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span>&#123;</span><br><span class="line">	  System.out.println(<span class="string">"动物去玩"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 子类继承抽象类AnimalAbs</span></span><br><span class="line"><span class="comment">//如果Monkey类没有将所有抽象全重写,会报错</span></span><br><span class="line"><span class="keyword">public</span>  <span class="class"><span class="keyword">class</span>  <span class="title">Monkey</span> <span class="keyword">extends</span> <span class="title">AnimalAbs</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*抽象方法的重写: 1. 方法名,参数列表,返回值与父类方法一致,权限大于等于父类 </span></span><br><span class="line"><span class="comment">                  2. 去掉abstract关键字</span></span><br><span class="line"><span class="comment">				  3. 去掉方法声明后面的;然后给方法加上方法体&#123;&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>&#123;</span><br><span class="line">	   System.out.println(<span class="string">"猴子吃香蕉"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>代码2</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 抽象类的测试</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestAnimalAbs</span> </span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">// AnimalAbs是抽象的: 无法实例化</span></span><br><span class="line">		<span class="comment">//AnimalAbs aa = new AnimalAbs();</span></span><br><span class="line"></span><br><span class="line">		Monkey m = <span class="keyword">new</span> Monkey();</span><br><span class="line">		m.eat();<span class="comment">//猴子吃香蕉</span></span><br><span class="line">		<span class="comment">//System.out.println("Hello World!");</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">// 父类的引用指向子类的对象  AnimalAbs a = new Monkey();</span></span><br><span class="line">		AnimalAbs a = <span class="keyword">new</span> Monkey();<span class="comment">// 抽象类的多态</span></span><br><span class="line">		a.eat();<span class="comment">// 猴子吃香蕉</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">// 抽象类可以作为方法的参数或者返回值</span></span><br><span class="line">       <span class="comment">//AnimalAbs aab = new AnimalAbs();</span></span><br><span class="line">       getAniAbs(a);<span class="comment">//猴子吃香蕉</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 要求: 不同动物来了,吃不同的东西</span></span><br><span class="line"><span class="comment">// 抽象类作为方法的参数</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">getAniAbs</span><span class="params">(AnimalAbs m)</span></span>&#123; <span class="comment">//AnimalAbs m =  new Monkey() 多态</span></span><br><span class="line">		m.eat();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="抽象类中的成员"><a href="#抽象类中的成员" class="headerlink" title="抽象类中的成员"></a>抽象类中的成员</h2><ol>
+<li>成员变量,private,static,普通成员<br>抽象类名.静态变量;</li>
+<li>构造方法<br>原因: 一个类中,有没有构造方法,跟类中能否定义成员变量,有关,与是不是可以实例化对象无关.<br>抽象类: 就是为了当父类,子类有构造方法,子类构造的第一行,默认隐式super();调用父类中的空参数构造方法</li>
+<li>方法: 普通方法,抽象方法,静态方法</li>
+<li>抽象: abstract<br>修饰类,等着被继承<br>修饰方法,等着被重写<br>abstract不能修饰成员变量</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li><p>抽象类不能被实例化(初学者很容易犯的错)，如果被实例化，就会报错，编译无法通过。只有抽象类的非抽象子类可以创建对象。</p>
+</li>
+<li><p>抽象类中不一定包含抽象方法，但是有抽象方法的类必定是抽象类。</p>
+</li>
+<li><p>抽象类中的抽象方法只是声明，不包含方法体，就是不给出方法的具体实现也就是方法的具体功能。</p>
+</li>
+<li><p>构造方法，类方法（用 static 修饰的方法）不能声明为抽象方法。</p>
+</li>
+<li><p>抽象类的子类必须给出抽象类中的抽象方法的具体实现，除非该子类也是抽象类。</p>
+</li>
+</ol>
 <h2 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h2><p>&#8195;今天就到这里了，明天见，加油！</p>
 
       
@@ -615,8 +673,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/08/Java-duotai/" rel="next" title="Java_多态">
-                <i class="fa fa-chevron-left"></i> Java_多态
+              <a href="/2019/06/08/Java-duotai/" rel="next" title="Java 多态">
+                <i class="fa fa-chevron-left"></i> Java 多态
               </a>
             
           </div>
@@ -702,7 +760,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -847,7 +905,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晚安"><span class="nav-number">2.</span> <span class="nav-text">晚安</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抽象的概述"><span class="nav-number">2.</span> <span class="nav-text">抽象的概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抽象方法的定义方法"><span class="nav-number">3.</span> <span class="nav-text">抽象方法的定义方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抽象类"><span class="nav-number">4.</span> <span class="nav-text">抽象类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抽象的特点"><span class="nav-number">5.</span> <span class="nav-text">抽象的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抽象类中的成员"><span class="nav-number">6.</span> <span class="nav-text">抽象类中的成员</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">7.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晚安"><span class="nav-number">8.</span> <span class="nav-text">晚安</span></a></li></ol></div>
             
 
           </div>
