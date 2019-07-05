@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="cnfox Blog">
 <meta property="og:description" content="写在开头&amp;#8195;Java语言的三大特点之一:多态&amp;#8195;多态是同一个行为具有多个不同表现形式或形态的能力。&amp;#8195;事物的多种形态,父类引用指向子类对象&amp;#8195;今天我们说一下这一个比较晦涩难懂的概念">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-05T02:30:21.332Z">
+<meta property="og:updated_time" content="2019-07-05T06:53:24.413Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java_多态">
 <meta name="twitter:description" content="写在开头&amp;#8195;Java语言的三大特点之一:多态&amp;#8195;多态是同一个行为具有多个不同表现形式或形态的能力。&amp;#8195;事物的多种形态,父类引用指向子类对象&amp;#8195;今天我们说一下这一个比较晦涩难懂的概念">
@@ -298,6 +298,25 @@
         
         
           
+          <li class="menu-item menu-item-heart">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/heart/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>捐赠</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-about">
 
     
@@ -458,7 +477,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-05 10:30:21" itemprop="dateModified" datetime="2019-07-05T10:30:21+08:00">2019-07-05</time>
+                <time title="修改时间：2019-07-05 14:53:24" itemprop="dateModified" datetime="2019-07-05T14:53:24+08:00">2019-07-05</time>
               
             
           </span>
@@ -514,6 +533,21 @@
       
         <h2 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h2><p>&#8195;Java语言的三大特点之一:多态<br>&#8195;多态是同一个行为具有多个不同表现形式或形态的能力。<br>&#8195;事物的多种形态,父类引用指向子类对象<br>&#8195;今天我们说一下这一个比较晦涩难懂的概念</p>
 <a id="more"></a>
+
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p><strong>事物的多种形态</strong></p>
+<ul>
+<li>举例:猫是猫,但猫也是动物,猫这个类就具有多种形态</li>
+<li>发生的前提 :必须有子父类继承关系或者接口实现关系;子类必须重写父类方法</li>
+<li>表现方法:父类引用指向子类对象</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">  Animal 类,父类</span><br><span class="line">  Cat 类,子类</span><br><span class="line">  Dog 类,子类  </span><br><span class="line"></span><br><span class="line"> <span class="class"><span class="keyword">class</span> <span class="title">Cat</span> <span class="keyword">extends</span> <span class="title">Aniaml</span></span>&#123;</span><br><span class="line">   重写方法;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dog</span> <span class="keyword">extends</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">重写方法;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">  main()&#123;</span><br><span class="line">     Animal a = <span class="keyword">new</span> Cat();<span class="comment">// 多态,父类的引用指向子类的对象</span></span><br><span class="line">     Animal b = <span class="keyword">new</span> Dog();<span class="comment">// 多态,父类的引用指向子类的对象</span></span><br><span class="line">     Cat  c = <span class="keyword">new</span> Cat();<span class="comment">// 实例化对象</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="多态中成员变量的优先级"><a href="#多态中成员变量的优先级" class="headerlink" title="多态中成员变量的优先级"></a>多态中成员变量的优先级</h2><p>多态中成员变量的规则: 编译看=的左边(父类),运行看=的左边(父类)<br>编译: 指就是写代码的过程,如果父类中,没有这个成员变量,于是代码编译就会报错<br>运行: 指代码在内存中运行时,成员变量,调用的实际上是父类中的成员<br>(Animal  a = new Cat();  在调用成员变量时,a想象成super)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 多态中的子类,Cat</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">Cat</span> <span class="keyword">extends</span> <span class="title">Animal</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line">	<span class="keyword">int</span> b = <span class="number">77</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 多态中的父类</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">Animal</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">99</span>;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 测试多态</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestAnimal</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">// 多态,父类的引用指向子类的对象</span></span><br><span class="line">        <span class="comment">// 1. 多态中成员变量的特点,编译看父类,运行看父类</span></span><br><span class="line">		Animal c = <span class="keyword">new</span> Cat();</span><br><span class="line">		System.out.println(c.a);<span class="comment">// 99 调用父类的变量a</span></span><br><span class="line">		<span class="comment">// System.out.println(c.b); 错误代码,原因是,b变量在Animal类中没有定义</span></span><br><span class="line"></span><br><span class="line">		Animal d = <span class="keyword">new</span> Dog();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h2><p>&#8195;今天就到这里了，明天见，加油！</p>
 
@@ -828,7 +862,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晚安"><span class="nav-number">2.</span> <span class="nav-text">晚安</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概念"><span class="nav-number">2.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多态中成员变量的优先级"><span class="nav-number">3.</span> <span class="nav-text">多态中成员变量的优先级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晚安"><span class="nav-number">4.</span> <span class="nav-text">晚安</span></a></li></ol></div>
             
 
           </div>
