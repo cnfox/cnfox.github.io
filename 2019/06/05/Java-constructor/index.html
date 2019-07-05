@@ -103,18 +103,18 @@
 
 
 
-  <meta name="description" content="写在开头&amp;#8195;构造函数，是一种特殊的方法。&amp;#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。&amp;#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。&amp;#8195;今天我们说一下Java:构造函数.">
+  <meta name="description" content="写在开头&amp;#8195;构造方法，是一种特殊的方法。&amp;#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。&amp;#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。&amp;#8195;今天我们说一下Java:构造函数.">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java 构造函数">
+<meta property="og:title" content="Java 构造方法">
 <meta property="og:url" content="https:cnfox.github.io/2019/06/05/Java-constructor/index.html">
 <meta property="og:site_name" content="cnfox Blog">
-<meta property="og:description" content="写在开头&amp;#8195;构造函数，是一种特殊的方法。&amp;#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。&amp;#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。&amp;#8195;今天我们说一下Java:构造函数.">
+<meta property="og:description" content="写在开头&amp;#8195;构造方法，是一种特殊的方法。&amp;#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。&amp;#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。&amp;#8195;今天我们说一下Java:构造函数.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-05T15:23:35.570Z">
+<meta property="og:updated_time" content="2019-07-05T01:45:35.746Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java 构造函数">
-<meta name="twitter:description" content="写在开头&amp;#8195;构造函数，是一种特殊的方法。&amp;#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。&amp;#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。&amp;#8195;今天我们说一下Java:构造函数.">
+<meta name="twitter:title" content="Java 构造方法">
+<meta name="twitter:description" content="写在开头&amp;#8195;构造方法，是一种特殊的方法。&amp;#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。&amp;#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。&amp;#8195;今天我们说一下Java:构造函数.">
 
 
 
@@ -132,7 +132,7 @@
   };
 </script>
 
-  <title>Java 构造函数 | cnfox Blog</title>
+  <title>Java 构造方法 | cnfox Blog</title>
   
 
 
@@ -415,7 +415,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Java 构造函数
+          <h1 class="post-title" itemprop="name headline">Java 构造方法
 
               
             
@@ -441,12 +441,24 @@
                 
               
 
-              <time title="创建时间：2019-06-05 23:19:31 / 修改时间：23:23:35" itemprop="dateCreated datePublished" datetime="2019-06-05T23:19:31+08:00">2019-06-05</time>
+              <time title="创建时间：2019-06-05 23:19:31" itemprop="dateCreated datePublished" datetime="2019-06-05T23:19:31+08:00">2019-06-05</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-05 09:45:35" itemprop="dateModified" datetime="2019-07-05T09:45:35+08:00">2019-07-05</time>
               
             
           </span>
@@ -500,9 +512,62 @@
       
 
       
-        <h2 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h2><p>&#8195;构造函数，是一种特殊的方法。<br>&#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。<br>&#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。<br>&#8195;今天我们说一下Java:构造函数.</p>
+        <h2 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h2><p>&#8195;构造方法，是一种特殊的方法。<br>&#8195;主要用来在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。<br>&#8195;特别的一个类可以有多个构造函数，可根据其参数个数的不同或参数类型的不同来区分它们即构造函数的重载。<br>&#8195;今天我们说一下Java:构造函数.</p>
 <a id="more"></a>
 
+<h2 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h2><ul>
+<li><p>定义:构造方法是一种特殊的方法，它是一个与类同名且返回值类型为同名类类型的方法。对象的创建就是通过构造方法来完成，其功能主要是完成对象的初始化。当类实例化一个对象时会自动调用构造方法。构造方法和其他方法一样也可以重载。又可以叫构造器 构造函数 constructor</p>
+</li>
+<li><p>作用:给成员变量进行赋值</p>
+</li>
+<li><p>定义方法:修饰符 构造方法名(参数列表){主要: 成员变量进行赋值}</p>
+</li>
+</ul>
+<p><strong>说明</strong></p>
+<blockquote>
+<ol>
+<li>构造方法名: 必须与类名保持一致,严格区分大小写,符号都必须完全一样</li>
+<li>构造方法没有返回值类型,连void都不写</li>
+<li>参数列表,可以有参数,可以没有参数</li>
+<li>构造方法中的内容 : 主要是给成员变量进行赋值</li>
+</ol>
+</blockquote>
+<p><strong>使用方法</strong></p>
+<blockquote>
+<p>当new一个类对象的时候,这个时候,调用构造方法<br>每次new对象,只调用一次构造方法<br>JVM虚拟机去调用的构造方法<br>构造方法,不能主动调用</p>
+</blockquote>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span>  <span class="class"><span class="keyword">class</span>  <span class="title">Person</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="comment">// 定义一个构造方法,空参数构造方法</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span></span>&#123;</span><br><span class="line">       System.out.println(<span class="string">"我是空参数的构造方法"</span>);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">// Person() : 调用了Person类中构造方法,空参数构造方法</span></span><br><span class="line">		Person p = <span class="keyword">new</span> Person();<span class="comment">// 我是空参数的构造方法</span></span><br><span class="line">		Person p1 = <span class="keyword">new</span> Person();<span class="comment">// 我是空参数的构造方法</span></span><br><span class="line">		<span class="comment">// p.Person(); 错误代码,构造方法不能主动调用,只能是new对象时,JVM调用,并且只调用一次</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>使用时的注意事项</strong></p>
+<ol>
+<li>默认存在空参数构造,内容为空</li>
+<li>手动添加构造函数,系统不在默认添加空参数构造函数</li>
+<li>进行一次实例化对象,调用一次构造函数,传入参数不同,调用的构造函数不同</li>
+<li>构造函數也有重載</li>
+</ol>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">Student</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">    <span class="comment">// 给成员变量进行赋值,有参数的构造方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name,<span class="keyword">int</span> age)</span></span>&#123;</span><br><span class="line"><span class="comment">//this关键字在下面会说到,这里暂且认为这样使用</span></span><br><span class="line">	   <span class="keyword">this</span>.name = name;<span class="comment">//为解决变量的命名冲突和不确定性问题，引入关键字this</span></span><br><span class="line">	   <span class="keyword">this</span>.age = age;<span class="comment">//关键字this代表其所在方法的当前对象的引用</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">        <span class="comment">//Student s = new Student(); 错误代码,没有定义空参数的构造方法</span></span><br><span class="line">		Student s = <span class="keyword">new</span> Student(<span class="string">"张三"</span>,<span class="number">20</span>);</span><br><span class="line">		System.out.println(s.name + <span class="string">"++++++"</span>+s.age);<span class="comment">// 张三 20</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="构造函数和set方法赋值的区别"><a href="#构造函数和set方法赋值的区别" class="headerlink" title="构造函数和set方法赋值的区别"></a>构造函数和set方法赋值的区别</h2><ol>
+<li><p>构造函数只在new时候调用一次构造函数 ,再次new时候是调用的新对象的构造函数,也就是说<code>不能通过构造函数的方法,对一个对象的成员变量进行两次赋值</code></p>
+</li>
+<li><p>set方法,使用灵活,可以给同一个对象里的成员变量进行多次赋值</p>
+</li>
+</ol>
+<p><strong>实际开发过程中,多以set方法进行赋值</strong></p>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义有参数的构造方法</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">Student</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">    <span class="comment">// 给成员变量进行赋值,有参数的构造方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name,<span class="keyword">int</span> age)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	   <span class="keyword">this</span>.name = name;</span><br><span class="line">	   <span class="keyword">this</span>.age = age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//  构造方法的重载</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">()</span></span>&#123;</span><br><span class="line">	   System.out.println(name +<span class="string">"**********"</span>+ age);<span class="comment">//null**********0</span></span><br><span class="line">	&#125;</span><br><span class="line">   <span class="comment">//set get方法进行取值赋值</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span></span>&#123;</span><br><span class="line">	  <span class="keyword">this</span>.name = name ;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span></span>&#123;</span><br><span class="line">	   <span class="keyword">return</span> name;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span></span>&#123;</span><br><span class="line">	  <span class="keyword">this</span>.age = age ;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123;</span><br><span class="line">	   <span class="keyword">return</span> age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">        Student s = <span class="keyword">new</span> Student(); <span class="comment">//错误代码,没有定义空参数的构造方法</span></span><br><span class="line">		Student s1 = <span class="keyword">new</span> Student(<span class="string">"张三"</span>,<span class="number">20</span>);</span><br><span class="line">		System.out.println(s1.name + <span class="string">"++++++"</span>+s1.age);<span class="comment">// 张三 20,通过构造方法的赋值得到的结果</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="构造方法在内存中的执行过程"><a href="#构造方法在内存中的执行过程" class="headerlink" title="构造方法在内存中的执行过程"></a>构造方法在内存中的执行过程</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*Person1 p = new Person1("qq",99);</span></span><br><span class="line"><span class="comment">内存运行过程:</span></span><br><span class="line"><span class="comment">1. Person1.class 字节码文件,进入到方法区中</span></span><br><span class="line"><span class="comment">2. JVM调用main方法,作为程序的执行入口</span></span><br><span class="line"><span class="comment">3. main中的语句Person1 p = new Person1("qq",99);</span></span><br><span class="line"><span class="comment">1) main进入到栈内存中,执行</span></span><br><span class="line"><span class="comment">2) 在栈内存中,有一个引用,p</span></span><br><span class="line"><span class="comment">3) new 关键字,在堆内存中开辟一块空间</span></span><br><span class="line"><span class="comment">4) JVM将Person1中的成员变量,加载进内存中,赋初值</span></span><br><span class="line"><span class="comment">5) 因为成员定义时,有变量值,将初值去掉,换成了给成员变量赋的值  美丽---20</span></span><br><span class="line"><span class="comment">6) 调用构造方法,JVM看你使用的是什么参数的构造方法,执行构造方法中的内容</span></span><br><span class="line"><span class="comment">   ,本次构造方法中,给成员进行赋值, 替换掉 美丽---20 变成 qq--- 99</span></span><br><span class="line"><span class="comment">7) 将Person1在内存中的地址值,转换成16进制数,返回给栈内存中的引用变量p*/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 构造方法的执行过程</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">Person1</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> String name = <span class="string">"美丽"</span>;<span class="comment">// 显示赋值</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> age = <span class="number">20</span> ;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 给成员变量进行赋值,有参数的构造方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person1</span><span class="params">(String name,<span class="keyword">int</span> age)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	   <span class="keyword">this</span>.name = name;</span><br><span class="line">	   <span class="keyword">this</span>.age = age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 给成员变量进行赋值,有参数的构造方法</span></span><br><span class="line">	<span class="comment">// 证明 .成员变量,先进行了美丽和20的赋值,后执行了空参数的构造</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person1</span><span class="params">()</span></span>&#123;</span><br><span class="line">       System.out.println(<span class="string">"空参数构造"</span>+name + <span class="string">"-----"</span> +age);<span class="comment">//空参数构造美丽-----20</span></span><br><span class="line">       </span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		Person1 p1 = <span class="keyword">new</span> Person1(); <span class="comment">// 调用空参数</span></span><br><span class="line"></span><br><span class="line">		Person1 p = <span class="keyword">new</span> Person1(<span class="string">"qq"</span>,<span class="number">99</span>);<span class="comment">// 调用有参数</span></span><br><span class="line">		System.out.println(<span class="string">"有参数的构造"</span>+p.name + <span class="string">"-----"</span> + p.age);<span class="comment">//有参数的构造qq-----99</span></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="this关键字的使用"><a href="#this关键字的使用" class="headerlink" title="this关键字的使用"></a>this关键字的使用</h2><ul>
+<li><p>this关键字代表其所在方法的当前对象的引用</p>
+</li>
+<li><p>为解决变量的命名冲突和不确定性问题，引入关键字this,用来区分局部变量和成员变量的重名问题</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 构造方法的执行过程</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">Person1</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> String name = <span class="string">"美丽"</span>;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> age = <span class="number">20</span> ;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 给成员变量进行赋值,有参数的构造方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person1</span><span class="params">(String name,<span class="keyword">int</span> age)</span></span>&#123;</span><br><span class="line">		<span class="comment">// 调用Person1类中的一个参数构造方法</span></span><br><span class="line">	   <span class="keyword">this</span>(<span class="string">"aa"</span>);<span class="comment">// 本类对象的引用  : new Person1() //一个参数的构造  aa</span></span><br><span class="line">       System.out.println(<span class="keyword">this</span>.name);<span class="comment">// aa</span></span><br><span class="line">	   <span class="keyword">this</span>.name = name;<span class="comment">// qq</span></span><br><span class="line">	   <span class="keyword">this</span>.age = age;<span class="comment">// 99</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 证明 .成员变量,先进行了美丽和20的赋值,后执行了空参数的构造</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person1</span><span class="params">()</span></span>&#123;</span><br><span class="line">       System.out.println(<span class="string">"空参数构造"</span>+name + <span class="string">"-----"</span> +age);<span class="comment">//空参数构造美丽-----20</span></span><br><span class="line">       </span><br><span class="line">	&#125;</span><br><span class="line"><span class="comment">// 给成员变量进行赋值,有参数的构造方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person1</span><span class="params">(String name)</span></span>&#123;</span><br><span class="line">	   <span class="keyword">this</span>();<span class="comment">// 调用空参数构造方法</span></span><br><span class="line">	   <span class="keyword">this</span>.name = name;   </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">//Person1 p1 = new Person1(); // 调用空参数</span></span><br><span class="line"></span><br><span class="line">		Person1 p = <span class="keyword">new</span> Person1(<span class="string">"qq"</span>,<span class="number">99</span>);<span class="comment">// 调用有参数</span></span><br><span class="line">		System.out.println(<span class="string">"有参数的构造"</span>+p.name + <span class="string">"-----"</span> + p.age);<span class="comment">//有参数的构造qq-----99</span></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -814,7 +879,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在开头"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#构造方法"><span class="nav-number">2.</span> <span class="nav-text">构造方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#构造函数和set方法赋值的区别"><span class="nav-number">3.</span> <span class="nav-text">构造函数和set方法赋值的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#构造方法在内存中的执行过程"><span class="nav-number">4.</span> <span class="nav-text">构造方法在内存中的执行过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#this关键字的使用"><span class="nav-number">5.</span> <span class="nav-text">this关键字的使用</span></a></li></ol></div>
             
 
           </div>
