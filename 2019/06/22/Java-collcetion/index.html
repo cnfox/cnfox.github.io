@@ -112,11 +112,11 @@
 <meta property="og:description" content="写在开头&amp;#8195;图片的问题暂时还没有解决,主要是我没有备案的域名啊,而且对我来说也没有什么必要的,我正在想办法把图片转移到阿里云OSS上,还需要一点时间……emmmm我们多贴一点代码,代码才是王道! &amp;#8195;今天我们说一下Java编程的很重要的一部分:Java集合.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/1.Collection%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.png">
-<meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190705212000.png">
-<meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190706103958.png">
-<meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190706104042.png">
-<meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190706145114.png">
-<meta property="og:updated_time" content="2019-07-06T06:51:20.234Z">
+<meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/ddq1.jpg">
+<meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/list1.png">
+<meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/list2.png">
+<meta property="og:image" content="https://cnfox.oss-cn-beijing.aliyuncs.com/img/hashset.png">
+<meta property="og:updated_time" content="2019-07-06T07:13:30.609Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java collcetion">
 <meta name="twitter:description" content="写在开头&amp;#8195;图片的问题暂时还没有解决,主要是我没有备案的域名啊,而且对我来说也没有什么必要的,我正在想办法把图片转移到阿里云OSS上,还需要一点时间……emmmm我们多贴一点代码,代码才是王道! &amp;#8195;今天我们说一下Java编程的很重要的一部分:Java集合.">
@@ -483,7 +483,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-06 14:51:20" itemprop="dateModified" datetime="2019-07-06T14:51:20+08:00">2019-07-06</time>
+                <time title="修改时间：2019-07-06 15:13:30" itemprop="dateModified" datetime="2019-07-06T15:13:30+08:00">2019-07-06</time>
               
             
           </span>
@@ -618,7 +618,7 @@
 </ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Collection;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CollectionDemo4</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Collection c = <span class="keyword">new</span> ArrayList();</span><br><span class="line">		c.add(<span class="string">"a"</span>);</span><br><span class="line">		c.add(<span class="string">"b"</span>);</span><br><span class="line">		c.add(<span class="string">"c"</span>);</span><br><span class="line">		c.add(<span class="string">"d"</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 迭代器的方式进行集合的遍历</span></span><br><span class="line">		<span class="comment">// 1. 通过iterator() 方法: 获取到当前集合的一个迭代器对象,iterator()方法来自于Collection接口</span></span><br><span class="line">		</span><br><span class="line"><span class="comment">// 说明:Collection下的所有实现类,都重写了iterator()这个方法,List  Set</span></span><br><span class="line">		<span class="comment">/* Iterator it = c.iterator();</span></span><br><span class="line"><span class="comment">		// 2. 通过Iterator中方法,hasNext() : 判断集合中是否有下一个元素,有元素,返回true</span></span><br><span class="line"><span class="comment">		boolean b = it.hasNext();</span></span><br><span class="line"><span class="comment">		System.out.println(b);</span></span><br><span class="line"><span class="comment">		</span></span><br><span class="line"><span class="comment">		if(b) &#123;// 有元素</span></span><br><span class="line"><span class="comment">			// 3. 通过Iterator中方法,next() : 获取集合中的指定元素</span></span><br><span class="line"><span class="comment">			String s = (String)it.next();</span></span><br><span class="line"><span class="comment">			System.out.println(s);</span></span><br><span class="line"><span class="comment">			</span></span><br><span class="line"><span class="comment">		&#125;*/</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 抽成一个循环的方式,将集合中的数据一个一个获取到</span></span><br><span class="line">		<span class="comment">// 迭代器在使用中比较推荐: 为什么? 原因是,</span></span><br><span class="line"><span class="comment">// 1. 迭代器可以进行所有容器的遍历(数组和集合)</span></span><br><span class="line">		<span class="comment">// 2. 迭代器遍历的时候,不看索引,只看容器中有没有下一个元素</span></span><br><span class="line">	  Iterator it1 = c.iterator();</span><br><span class="line">	  <span class="comment">// 循环,不确定c集合中的元素个数,于是使用while循环</span></span><br><span class="line">	  <span class="keyword">while</span>(it1.hasNext()) &#123;<span class="comment">// 判断集合中有元素吗? 有元素,循环中获取元素</span></span><br><span class="line">		  System.out.println(it1.next());  </span><br><span class="line">	  &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="迭代器原理和注意事项"><a href="#迭代器原理和注意事项" class="headerlink" title="迭代器原理和注意事项"></a>迭代器原理和注意事项</h4><p><img src="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190705212000.png" alt></p>
+<h4 id="迭代器原理和注意事项"><a href="#迭代器原理和注意事项" class="headerlink" title="迭代器原理和注意事项"></a>迭代器原理和注意事项</h4><p><img src="https://cnfox.oss-cn-beijing.aliyuncs.com/img/ddq1.jpg" alt></p>
 <p>注意事项: </p>
 <ol>
 <li>hasNext() : 方法只做集合中是否有下一个元素的判断</li>
@@ -654,8 +654,8 @@
 <li><p>数据结构图解</p>
 </li>
 </ol>
-<p>ArrayList的存储方式<br><img src="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190706103958.png" alt></p>
-<p>LinkedList:<br><img src="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190706104042.png" alt></p>
+<p>ArrayList的存储方式<br><img src="https://cnfox.oss-cn-beijing.aliyuncs.com/img/list1.png" alt></p>
+<p>LinkedList:<br><img src="https://cnfox.oss-cn-beijing.aliyuncs.com/img/list2.png" alt></p>
 <h3 id="LinkedList特殊方法"><a href="#LinkedList特殊方法" class="headerlink" title="LinkedList特殊方法"></a>LinkedList特殊方法</h3><ol>
 <li>addFirst(E e): 向集合的开头添加一个元素</li>
 <li>addLast(E e) : 向结合的末尾添加一个元素</li>
@@ -769,7 +769,7 @@
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.HashSet;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.zgjy.demo.Person;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SetPersonDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 要求： 要求相同的姓名和年龄，就当成两个一样的对象，在set中，应该去重复</span></span><br><span class="line">		<span class="comment">// 怎么做到的： Person类中重写了 hashCode 和 equals 方法</span></span><br><span class="line">		<span class="comment">// 疑问： Person 没有直接父类，Object就是我的父类，</span></span><br><span class="line">		<span class="comment">// 想让自定义类型做到去重复，重写 hashCode 和 equals 方法就可以</span></span><br><span class="line">		Set&lt;Person&gt; set = <span class="keyword">new</span> HashSet();</span><br><span class="line">		</span><br><span class="line">		set.add(<span class="keyword">new</span> Person(<span class="string">"QQ"</span>,<span class="number">20</span>));</span><br><span class="line">		set.add(<span class="keyword">new</span> Person(<span class="string">"QQ"</span>,<span class="number">20</span>));</span><br><span class="line">		set.add(<span class="keyword">new</span> Person(<span class="string">"QQ"</span>,<span class="number">21</span>));</span><br><span class="line">		</span><br><span class="line">		System.out.println(set);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://cnfox.oss-cn-beijing.aliyuncs.com/img/20190706145114.png" alt></p>
+<p><img src="https://cnfox.oss-cn-beijing.aliyuncs.com/img/hashset.png" alt></p>
 
       
     </div>
